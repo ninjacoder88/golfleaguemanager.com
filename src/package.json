@@ -1,0 +1,22 @@
+{
+  "name": "golf_league_manager",
+  "version": "1.0.0",
+  "description": "golfleaguemanager.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninjacoder88/golfleaguemanager.com.git"
+  },
+  "author": "Ninja Software Consulting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninjacoder88/golfleaguemanager.com/issues"
+  },
+  "homepage": "https://github.com/ninjacoder88/golfleaguemanager.com#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

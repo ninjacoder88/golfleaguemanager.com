@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Golf League Manager</title>
+        <!--<link rel="icon" href="favicon.png" />-->
+        <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-5.1.3.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/site.css"/>
+    </head>
+    <body class="h-100">
+        <div class="container-fluid h-100" id="application">
+            <div class="row h-100">
+                <div class="col-md-2 bg-dark text-white" style="border-right: 5px solid #dddddd;">
+                    <h5 class="text-center mt-3" data-bind="click: showHome" style="cursor: pointer">Golf League Manager</h5>
+                    <hr/>
+                    <ul class="nav flex-column">
+                        <li class="nav-item bg-secondary mb-2" style="border-radius: 5px">
+                            <a class="nav-link text-white" href="#" data-bind="click: showLeagues">Leagues</a>
+                        </li>
+                        <li class="nav-item bg-secondary mb-2" style="border-radius: 5px">
+                            <a class="nav-link text-white" href="#" data-bind="click: showGolfers">Golfers</a>
+                        </li>
+                        <li class="nav-item bg-secondary mb-2" style="border-radius: 5px">
+                            <a class="nav-link text-white" href="#" data-bind="click: showCourses">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <div id="home" data-bind="visible: homeVisible" style="display: none;">
+                        <h2 class="text-center mt-3">Welcome to Golf League Manager</h2>
+                    </div>
+                    <div id="leagues" data-bind="visible: leaguesVisible" style="display: none;">
+                        <h2 class="text-center mt-3">Leagues</h2>
+                        <!-- list leagues -->
+                            <!-- list seasons -->
+                                <!-- show announcements -->
+                                <!-- show schedule -->
+                                <!-- show golfers -->
+                                    <!-- matches -->
+                                    <!-- handicap -->
+
+                        <button type="button" class="btn btn-primary">Create A League</button>
+                    </div><!--/leagues-->
+                    <div id="golfers" data-bind="visible: golfersVisible" style="display: none;">
+                        <h2 class="text-center mt-3">Golfers</h2>
+                        <!-- name -->
+                        <!-- email -->
+                        <!-- phone number -->
+                        <!-- leagues -->
+                            <!-- handicap -->
+                        <button type="button" class="btn btn-primary">Create Account</button>
+                    </div><!--/golfers-->
+                    <div id="courses" data-bind="visible: coursesVisible" style="display: none;">
+                        <h2 class="text-center mt-3">Courses</h2>
+                        <!-- list courses -->
+                            <!-- list leagues -->
+                        <!--<button type="button" class="btn btn-primary"></button>-->
+                    </div><!--/courses-->
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/lib/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap.bundle-5.1.3.min.js"></script>
+        <script type="text/javascript" src="js/lib/knockout-min.js"></script>
+        <script type="text/javascript" src="js/IndexViewModel.js"></script>
+    </body>
+</html>
